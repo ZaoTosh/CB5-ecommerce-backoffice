@@ -26,6 +26,9 @@
       .icon {
       }
       .label {
+        @media all and (min-width: 800px) {
+          display: none;
+        }
       }
     }
   }
