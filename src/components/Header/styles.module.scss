@@ -1,0 +1,23 @@
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    // filter: blur(2px);
+    // -webkit-filter: blur(2px);
+  }
+  h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  h2 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}

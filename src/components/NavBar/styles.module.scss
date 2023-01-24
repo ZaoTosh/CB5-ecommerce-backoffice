@@ -1,0 +1,32 @@
+.main {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 80px;
+  width: 100%;
+  align-content: center;
+  flex-direction: row;
+  img {
+    background-color: white;
+    //border-radius: 5px;
+  }
+  ul {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    align-content: center;
+    list-style-type: none;
+    li {
+      cursor: pointer;
+      transition: all 0.2s ease;
+      &:hover {
+        color: red;
+      }
+      font-size: 22px;
+      .icon {
+      }
+      .label {
+      }
+    }
+  }
+}
