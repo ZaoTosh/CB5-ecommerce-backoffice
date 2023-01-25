@@ -1,35 +1,37 @@
 .main {
-  display: flex;
   background-color: black;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
   color: white;
-  height: 80px;
-  width: 100%;
-  align-content: center;
-  flex-direction: row;
+  display: flex;
+  height: 100vh;
+  margin-top: 5px;
+  width: 200px;
+
+  flex-direction: column;
   img {
     background-color: white;
-    //border-radius: 5px;
+    border-radius: 100%;
   }
   ul {
-    display: flex;
-    gap: 15px;
-    align-items: center;
     align-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
     list-style-type: none;
+
     li {
       cursor: pointer;
-      transition: all 0.2s ease;
+      transition: all 0.2s;
       &:hover {
         color: red;
       }
       font-size: 22px;
-      .icon {
-      }
-      .label {
-        @media all and (min-width: 800px) {
-          display: none;
-        }
-      }
     }
+  }
+  @media all and (max-width: 800px) {
+    width: 100px;
   }
 }

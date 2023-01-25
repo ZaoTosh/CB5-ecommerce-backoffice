@@ -1,0 +1,17 @@
+.main {
+  background-color: white;
+  display: flex;
+  width: 100%;
+
+  .sxColumn {
+    background-color: black;
+    width: 200px;
+    @media screen and (max-width: 800px) {
+      width: 120px;
+    }
+  }
+  .dxColumn {
+    padding-right: 10px;
+    width: 100%;
+  }
+}
