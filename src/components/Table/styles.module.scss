@@ -1,0 +1,51 @@
+.main {
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  color: white;
+
+  .tableHead {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100vw - 220px);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    @media all and (max-width: 800px) {
+      width: calc(100vw - 120px);
+    }
+    .description {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      font-weight: bold;
+      font-size: 10px;
+    }
+  }
+  .tableBody {
+    width: 100%;
+
+    .tableSpace {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .tableRow {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+        height: 40px;
+        border-bottom: 1px solid black;
+        gap: 15px;
+        img {
+          max-height: 30px;
+        }
+        .name {
+        }
+      }
+      .update {
+      }
+    }
+  }
+}

@@ -8,7 +8,7 @@ const Header = () => {
         Discover how Ferrari maintains its mystique as the world's most powerful
         brand
       </h2>
-      <img src={logo} alt="React Image" />
+      {/* <img src={logo} alt="React Image" /> */}
     </div>
   );
 };
