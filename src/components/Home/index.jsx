@@ -25,6 +25,15 @@ const Home = () => {
     font-family: Tahoma, sans-serif;
     line-height: 1.5;
   `;
+  const ListFerrari = styled.div`
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Tahoma, sans-serif;
+    line-height: 1.5;
+  `;
 
   const Image = styled.div`
     img {
@@ -41,9 +50,9 @@ const Home = () => {
         provarla in pista.
         <br />
         Potrai scegliere tra:
-        <br />
-        {ferrari.map((lista) => " " + lista + "! ")}
       </Paragraph>
+
+      <ListFerrari>{ferrari.map((lista) => " " + lista + "! ")}</ListFerrari>
 
       <Image>
         <img src={logo} alt="React Image" />
