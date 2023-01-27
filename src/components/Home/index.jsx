@@ -18,13 +18,12 @@ const Home = () => {
 
   const Paragraph = styled.div`
     display: flex;
-    margin: 0 20px;
-    text-align: left;
-    color: red;
-    font-style: ;
-    font-variant: ;
+    justify-content: center;
+    color: white;
+    font-style: normal;
     font-size: 20px;
-    font-family: ;
+    font-family: Tahoma, sans-serif;
+    line-height: 1.5;
   `;
 
   const Image = styled.div`
@@ -35,11 +34,6 @@ const Home = () => {
       border-top-left-radius: 10px;
     }
   `;
-
-  const ListaFerrari = styled.div`
-    display: flex;
-    color: red;
-  `;
   return (
     <Main>
       <Paragraph>
@@ -47,14 +41,10 @@ const Home = () => {
         provarla in pista.
         <br />
         Potrai scegliere tra:
+        <br />
+        {ferrari.map((lista) => " " + lista + "! ")}
       </Paragraph>
-      <ul>
-        <li>
-          <ListaFerrari>
-            {ferrari.map((lista) => " " + lista + "! ")}
-          </ListaFerrari>
-        </li>
-      </ul>
+
       <Image>
         <img src={logo} alt="React Image" />
       </Image>
