@@ -49,7 +49,7 @@ export const navBarLink = [
   {
     id: 7,
     label: "About",
-    route: "",
+    route: "about",
     icon: <MdInfoOutline />,
   },
 ];

@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import logo from "./car.jpg";
+
 const Header = () => {
   return (
     <div className={styles.main}>
